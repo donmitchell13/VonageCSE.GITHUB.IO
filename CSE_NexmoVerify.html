@@ -1,0 +1,83 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+<style>
+  
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      input[type=submit] {
+        width: 70%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      label {
+        font:bold;  
+
+      }
+      
+      div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+
+ 
+    
+</style>
+
+<div>
+<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+<input type=hidden name="oid" value="00D0E000000Aimo">
+<input type=hidden name="retURL" value="https://apicsedemo-mitchellvonage.cs89.force.com/VonageVerify">
+<input type=hidden name="lead_source" id="lead_source" value="Web2Lead">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="don.mitchell@vonage.com">                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<p><label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br></p>
+
+    <p><label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br></p>
+
+<p><label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" required /><br> </p>
+   
+    <p><label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>v
+
+    <p><label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br></p>
+
+<input type="submit" name="submit">
+
+</form>
+<h3>Thank you from the CSE team in your interest in our company. A verification token will be sent to you by text (SMS). On submission you will be redirected to a new page to submit your code for verification. </h3>
+
+</div>
